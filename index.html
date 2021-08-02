@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp Form</title>
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+    </head>
+    <body>       
+        <!-- The top section with logo and navigation elements-->
+        <header>
+            <div class="logo">bigcartel</div>
+            <nav >
+                <ul class="navbar__links">
+                    <li><a href="#">Tour</a></li>|
+                    <li><a href="#">Examples</a></li>|
+                    <li><a href="#">Buzz</a></li>|
+                    <li><a href="#">Pricing + Sign up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+
+
+
+        <!-- The bottom section with form -->
+        <div class="container" >
+            <div class="signup">
+                <h1>Sign up</h1>
+                <p>|</p>
+                <p>Payment is month-to-month. Upgrade, downgrade, or cancel at any time.</p>
+
+            </div>
+            <div class="form">
+                <div class="signup__form">
+                    <div class="form__title">
+                        <p class="circle" style="font-weight: bold;">1</p>
+                        <h3>Tell us about your store</h3>
+                    </div>
+                    
+                    <form class="form__fields">
+                        <label for="profilePicture">Upload Profile Photo</label>
+                        <input type="file" id="profilePicture" name="profilePicture"/><br>
+
+                        <div class="radio__checkbox">
+                            
+                            <label>Gender:</label>
+                      <input type="radio" id="male" name="gender" value="MALE">
+                      <label for="male">Male</label>
+                      <input type="radio" id="female" name="gender" value="FEMALE">
+                      <label for="female">Female</label>
+                      <input type="radio" id="other" name="gender" value="Other">
+                      <label for="other">Other</label><br>
+
+                  
+                    <label>Preferences:</label>
+                    <input type="checkbox" id="walking" name="walking" value="walking">
+                    <label for="walking">Walking</label>
+                    <input type="checkbox" id="jogging" name="jogging" value="jogging">
+                    <label for="jogging">Jogging</label> 
+                    <input type="checkbox" id="flying" name="flying" value="flying">
+                    <label for="flying">Flying</label>
+                    <input type="checkbox" id="swimming" name="swimming" value="swimming">
+                    <label for="swimming">Swimming</label>
+                </div>
+                                     
+    
+                       
+                        
+
+
+
+
+
+
+
+                        <label for="storeName" >Store Name</label>
+                        <input type="text" id="storeName" value="" placeholder="Store Name" name="storeName"/><br>
+                        <label for="storAddress" >Store Address</label>
+                        <input type="email" id="storeAddress" value="" placeholder="location" name="storeAddress"/>
+                        .bigcartel.com <br>
+                        <label for="password" >Password</label>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="password" name="password" maxlength="20" value="" placeholder="***********"/><br>
+                        <label for="confirmPassword">Password again</label>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="confirmPassword" name="confirmPassword" maxlength="20" value="" placeholder="***********"/><br>
+                        <label for="storeType" >Store type</label>
+                        <select id="storeType" name="storeType" >
+                            <option value="accessories">Accessories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="houseHolds">House holds</option>
+                            <option value="plumbing">Plumbing</option>
+                        </select><br>
+                        <label for="country" >Country</label>
+                        <select id="country" name="country" >
+                            <option value="unitedStates">United States</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="canada">Canada</option>
+                            <option value="uganda">Uganda</option>
+                        </select><br>
+                        <label for="timeZone" >Time Zone</label>
+                        <select id="timeZone" name="timeZone" >
+                            <option value="utc_+1">Military UTC +1</option>
+                            <option value="utc_+10:30">Australia UTC +10:30</option>
+                            <option value="utc_-5">South America UTC -5</option>
+                            <option value="utc_+4">Asia UTC +4</option>
+                        </select><br>
+                        <label for="currency" >Currency</label>
+                        <select id="currency" name="currency" >
+                            <option value="unitedStates">US Dollar</option>
+                            <option value="kenya">Kenya KES</option>
+                            <option value="canada">Bulgaria Stotinki</option>
+                            <option value="uganda">Brazil 1 Rappen</option>
+                        </select>
+                        <br>
+                        <br>
+                        <div class="submit">
+                            <input type="submit" class="submit__button">
+                        </div>
+                        
+
+
+                    </form>
+                </div>
+                
+
+                
+            </div>
+        </div>
+   
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: #ebebeb; */
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex; /*Dispaly horizontaly*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px; /*add 30 px padding on top and bottom, and 10% left and right*/
+  /* background-color: rgb(212, 212, 226); */
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+li,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+}
+
+.navbar__links {
+  list-style: none; /*remove any decoration including bulletins*/
+}
+
+.navbar__links li {
+  display: inline-block;
+  padding: 0px 10px; /*0 padding on top and right, then 10px left and right*/
+}
+
+.navbar__links li a {
+  transition: all 0.3s ease 0s;
+}
+.navbar__links li a:hover {
+  display: inline-block;
+  padding: 5px 10px; /*0 padding on top and right, then 10px left and right*/
+  margin: 10px;
+  color: white;
+  background-color: rgb(17, 27, 1);
+  border-radius: 5px;
+}
+
+/********************* The End Of Header styling************************/
+
+/********************* Beging of Div withing a Div styling************************/
+
+.container {
+  background-color: rgb(130, 194, 12);
+  width: 80%;
+  height: 100%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.signup h1 {
+  color: white;
+}
+
+.signup p {
+  padding-left: 30px;
+  color: white;
+  font-style: italic;
+}
+
+.form {
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  width: 90%;
+  height: 100%;
+  padding: 45px;
+  margin: 30px auto;
+}
+.signup__form {
+  background-color: rgb(245, 243, 241);
+  padding: 30px 150px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.form__title {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+/******** Begining of Style to circle number one ********/
+
+.circle {
+  background-color: rgb(130, 194, 12);
+  border-radius: 50%;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+/******** End of Style to circle number one ********/
+
+.form__title h3 {
+  color: rgb(130, 194, 12);
+}
+
+.form__fields {
+  padding-top: 30px;
+}
+
+/*****aligning lable and input boxes*******/
+
+input,
+select {
+  margin-bottom: 20px;
+}
+
+.submit,
+label {
+  width: 200px; /*this will not take effect because a label is inline element, but width only applies to bloch element */
+  display: inline-block; /*make it display inline block*/
+  text-align: right;
+  margin-right: 20px;
+}
+
+.submit__button {
+  padding: 5px 10px;
+}
+
+.radio__checkbox label {
+  display: inline-block;
+  width: 100px; /*this will not take effect because a label is inline element, but width only applies to bloch element */
+  display: inline-block; /*make it display inline block*/
+  text-align: left;
+  /* margin-left: px; */
+}
